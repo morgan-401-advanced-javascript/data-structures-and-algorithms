@@ -1,5 +1,5 @@
 # data-structures-and-algorithms
 ## Table of Contents
 
-[Array-Reverse](./challenges/arrayReverse)
-[Array-Shift](./challenges/ArrayShift)
+[1. Array-Reverse](./challenges/arrayReverse)
+[2. Array-Shift](./challenges/ArrayShift)
