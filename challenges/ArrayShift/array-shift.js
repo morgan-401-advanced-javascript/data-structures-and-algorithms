@@ -1,5 +1,5 @@
 'use strict';
-const arrayShift = {}
+const arrayShift = {};
 
 arrayShift.insertShiftArray = (a, b)=>{
   let answer = [];
