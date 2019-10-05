@@ -1,12 +1,5 @@
 'use strict';
-let arrayShift = {};
-
-
-let test1 = [2,4,6,8];
-let test1Insert = 5;
-
-let test2 = [4,8,15,23,42]; 
-let test2Insert = 16;
+const arrayShift = {}
 
 arrayShift.insertShiftArray = (a, b)=>{
   let answer = [];
@@ -26,7 +19,14 @@ arrayShift.insertShiftArray = (a, b)=>{
   return answer;
 };
 
-console.log('test 1 ', insertShiftArray(test1, test1Insert));
-console.log('test 2 ', insertShiftArray(test2, test2Insert));
+
+
+// let test1 = [2,4,6,8];
+// let test1Insert = 5;
+
+// let test2 = [4,8,15,23,42]; 
+// let test2Insert = 16;
+// console.log('test 1 ', insertShiftArray(test1, test1Insert));
+// console.log('test 2 ', insertShiftArray(test2, test2Insert));
 
 module.exports = arrayShift;
