@@ -75,11 +75,7 @@ describe('Can properly return a collection of all the values that exist in the l
   list.insert('blue');
   list.insert('green');
   let allItems = list.toString();
-
-  
   it('returns a collection', ()=>{
-
-
     expect(allItems).toBe('green,blue,yellow');
   });
 

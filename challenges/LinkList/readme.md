@@ -1,6 +1,6 @@
 # Singly Linked List
 
-<!-- Short summary or background information -->
+This challenge creates a linked list, searches to see if a specific value is present, and will return a string of all values in the list. 
 
 ## Challenge
 Write tests to prove the following functionality:
@@ -14,9 +14,11 @@ Write tests to prove the following functionality:
 * Can properly return a collection of all the values that exist in the linked list
 
 ## Approach & Efficiency
-
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+O(n)
+The worst case scenario would occur while cycling through each item of the list.
 
 ## API
 
-<!-- Description of each method publicly available to your Linked List -->
+insert(data) - Creates a new Node Object. Appends the new Node object to the beginning of the linked list
+includes(searchValue) - Takes in a paramenter and returns a boolean if the value exists in the linked list
+toString() - Returns a string with all the values in the linked list
