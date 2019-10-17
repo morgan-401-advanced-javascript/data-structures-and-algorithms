@@ -20,7 +20,7 @@ describe('insert into the linked list', ()=>{
   list.insert('yellow');
 
   it('successfully inserts into list', ()=>{
-    expect(list.head.value).toBe('yellow');
+    expect(list.head.data).toBe('yellow');
 
   });
 
@@ -32,7 +32,7 @@ describe('The head property will properly point to the first node in the linked 
   list.insert('blue');
 
   it('first node is correct', ()=>{
-    expect(list.head.value).toBe('blue');
+    expect(list.head.data).toBe('blue');
   });
 
 });
@@ -43,18 +43,19 @@ describe('Can properly insert multiple nodes into the linked list', ()=>{
   list.insert('blue');
 
   it('successfully added head', ()=>{
-    expect(list.head.value).toBe('blue');
+    expect(list.head.data).toBe('blue');
   });
   it('successfully added 2nd value', ()=>{
-    expect(list.head.next.value).toBe('yellow');
+    expect(list.head.next.data).toBe('yellow');
   });
 });
+
 describe('Will return true when finding a value within the linked list that exists', ()=>{
   let list = new LinkedList();
   list.insert('yellow');
   list.insert('blue');
-  let searchResult = list.search('yellow');
-  let badSearchResult = list.search('apple');
+  let searchResult = list.includes('yellow');
+  let badSearchResult = list.includes('apple');
   
   //  Will return true when finding a value within the linked list that exists
   it('Returns true for items that exist', ()=>{
@@ -66,4 +67,20 @@ describe('Will return true when finding a value within the linked list that exis
   });
 });
 
+
 // * Can properly return a collection of all the values that exist in the linked list
+describe('Can properly return a collection of all the values that exist in the linked list', ()=>{
+  let list = new LinkedList();
+  list.insert('yellow');
+  list.insert('blue');
+  list.insert('green');
+  let allItems = list.toString();
+
+  
+  it('returns a collection', ()=>{
+
+
+    expect(allItems).toBe('green,blue,yellow');
+  });
+
+});
