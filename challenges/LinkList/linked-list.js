@@ -12,6 +12,16 @@ class LinkedList {
     this.head = inserted;
     return this.head;
   }
+  search(searchValue) {
+    let currentNode = this.head;
+    while(currentNode) {
+      if (currentNode.value === searchValue){
+        return currentNode;
+      }
+      currentNode = currentNode.next; 
+    }
+    return null;
+  }
 }
 // * The head property will properly point to the first node in the linked list
 // * Can properly insert multiple nodes into the linked list

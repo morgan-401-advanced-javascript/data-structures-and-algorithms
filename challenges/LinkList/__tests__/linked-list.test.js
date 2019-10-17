@@ -49,7 +49,21 @@ describe('Can properly insert multiple nodes into the linked list', ()=>{
     expect(list.head.next.value).toBe('yellow');
   });
 });
+describe('Will return true when finding a value within the linked list that exists', ()=>{
+  let list = new LinkedList();
+  list.insert('yellow');
+  list.insert('blue');
+  let searchResult = list.search('yellow');
+  let badSearchResult = list.search('apple');
+  
+  //  Will return true when finding a value within the linked list that exists
+  it('Returns true for items that exist', ()=>{
+    expect(searchResult).toBeTruthy();
+  });
+  // * Will return false when searching for a value in the linked list that does not exist
+  it('Returns false for items that do not exist', ()=>{
+    expect(badSearchResult).toBeFalsy();
+  });
+});
 
-// * Will return true when finding a value within the linked list that exists
-// * Will return false when searching for a value in the linked list that does not exist
 // * Can properly return a collection of all the values that exist in the linked list
