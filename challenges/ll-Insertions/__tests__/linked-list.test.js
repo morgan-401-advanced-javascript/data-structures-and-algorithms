@@ -132,4 +132,19 @@ describe('Can successfully insert a node before a node located in the middle of 
   });
 });
 // Can successfully insert after a node in the middle of the linked list
+describe('Can successfully insert a node after a node located in the middle of a linked list', ()=>{
+  let list = new LinkedList();
+  list.insert('yellow');
+  list.append('blue');
+  list.insertAfter('green', 'yellow');
+  it('head stays the same', ()=>{
+    expect(list.head.data).toBe('yellow');
+  });
+  it('blue should be at the end', ()=>{
+    expect(list.head.next.next.data).toBe('blue');
+  });
+  it('new node should be in the middle', ()=>{
+    expect(list.head.next.data).toBe('green');
+  });
+});
 // Can successfully insert a node after the last node of the linked list
