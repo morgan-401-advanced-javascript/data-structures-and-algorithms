@@ -8,3 +8,5 @@
 [Array-Binary-Search](./challenges/arrayBinarySearch)
 #### Challenge 5
 [Link-List](./challenges/LinkList)
+#### Challenge 6
+[ll-Insertions](./challenges/ll-Insertions)
