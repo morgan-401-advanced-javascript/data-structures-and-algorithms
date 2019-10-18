@@ -1,6 +1,6 @@
 # Singly Linked List
 
-<!-- Short summary or background information -->
+More complex functions for singly linked lists
 
 ## Challenge
 * Have a class named Node. This class should contain:
@@ -30,8 +30,14 @@ Any functions you write should be clean, reusable and independent component part
 
 ## Approach & Efficiency
 
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+O(n)
+We never go deeper than one interation of the list so Big O(n) is still applicable
 
 ## API
 
-<!-- Description of each method publicly available to your Linked List -->
+insert(data) - Creates a new Node Object. Appends the new Node object to the beginning of the linked list
+includes(searchValue) - Takes in a value as a paramenter and returns a boolean if the value exists in the linked list
+toString() - Returns a string with all the values in the linked list
+append(data) - Adds a node to the end of the list
+insertBefore(data, before) - Adds a Node before a certain Node in the list
+insertAfter(data, after) - Adds a Node after a certain Node in the list
