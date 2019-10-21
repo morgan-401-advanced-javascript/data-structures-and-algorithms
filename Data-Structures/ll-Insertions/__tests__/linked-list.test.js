@@ -1,13 +1,13 @@
 const LinkedList = require('../linked-list.js');
 
-describe('Test', () => {
+xdescribe('Test', () => {
   it('true', ()=>{
     expect(true).toBeTruthy();
   });
 });
 
 // * Can successfully instantiate an empty linked list
-describe('instantiate an empty linked list', ()=>{
+xdescribe('instantiate an empty linked list', ()=>{
   let list = new LinkedList();
   it('empty list',()=>{
     expect(list).toBeTruthy();
@@ -15,7 +15,7 @@ describe('instantiate an empty linked list', ()=>{
 });
 
 // * Can properly insert into the linked list
-describe('insert into the linked list', ()=>{
+xdescribe('insert into the linked list', ()=>{
   let list = new LinkedList();
   list.insert('yellow');
 
@@ -26,7 +26,7 @@ describe('insert into the linked list', ()=>{
 
 });
 // * The head property will properly point to the first node in the linked list
-describe('The head property will properly point to the first node in the linked list', ()=>{
+xdescribe('The head property will properly point to the first node in the linked list', ()=>{
   let list = new LinkedList();
   list.insert('yellow');
   list.insert('blue');
@@ -37,7 +37,7 @@ describe('The head property will properly point to the first node in the linked 
 
 });
 // * Can properly insert multiple nodes into the linked list
-describe('Can properly insert multiple nodes into the linked list', ()=>{
+xdescribe('Can properly insert multiple nodes into the linked list', ()=>{
   let list = new LinkedList();
   list.insert('yellow');
   list.insert('blue');
@@ -50,7 +50,7 @@ describe('Can properly insert multiple nodes into the linked list', ()=>{
   });
 });
 
-describe('Will return true when finding a value within the linked list that exists', ()=>{
+xdescribe('Will return true when finding a value within the linked list that exists', ()=>{
   let list = new LinkedList();
   list.insert('yellow');
   list.insert('blue');
@@ -69,7 +69,7 @@ describe('Will return true when finding a value within the linked list that exis
 
 
 // * Can properly return a collection of all the values that exist in the linked list
-describe('Can properly return a collection of all the values that exist in the linked list', ()=>{
+xdescribe('Can properly return a collection of all the values that exist in the linked list', ()=>{
   let list = new LinkedList();
   list.insert('yellow');
   list.insert('blue');
@@ -82,7 +82,7 @@ describe('Can properly return a collection of all the values that exist in the l
 });
 
 // Can successfully add a node to the end of the linked list
-describe('Can successfully add a node to the end of the linked list', ()=>{
+xdescribe('Can successfully add a node to the end of the linked list', ()=>{
   let list = new LinkedList();
   list.insert('yellow');
   list.append('green');
@@ -100,7 +100,7 @@ describe('Can successfully add a node to the end of the linked list', ()=>{
 
 // Can successfully insert a node before a node located in the middle of a linked list
 
-describe('Can successfully insert a node before a node located in the middle of a linked list', ()=>{
+xdescribe('Can successfully insert a node before a node located in the middle of a linked list', ()=>{
   let list = new LinkedList();
   list.insert('yellow');
   list.append('blue');
@@ -116,7 +116,7 @@ describe('Can successfully insert a node before a node located in the middle of 
   });
 });
 // Can successfully insert a node before the first node of a linked list
-describe('Can successfully insert a node before a node located in the middle of a linked list', ()=>{
+xdescribe('Can successfully insert a node before a node located in the middle of a linked list', ()=>{
   let list = new LinkedList();
   list.insert('yellow');
   list.append('blue');
@@ -132,7 +132,7 @@ describe('Can successfully insert a node before a node located in the middle of 
   });
 });
 // Can successfully insert after a node in the middle of the linked list
-describe('Can successfully insert a node after a node located in the middle of a linked list', ()=>{
+xdescribe('Can successfully insert a node after a node located in the middle of a linked list', ()=>{
   let list = new LinkedList();
   list.insert('yellow');
   list.append('blue');

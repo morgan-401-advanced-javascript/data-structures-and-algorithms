@@ -7,6 +7,8 @@
 #### Challenge 3
 [Array-Binary-Search](./challenges/arrayBinarySearch)
 #### Challenge 5
-[Link-List](./challenges/LinkList)
+[Link-List](./Data-Structures/LinkList)
 #### Challenge 6
-[ll-Insertions](./challenges/ll-Insertions)
+[ll-Insertions](./Data-Structures/ll-Insertions)
+#### Challenge 7
+[ll-kth-from-end](./Data-Structures/ll-kth-from-end)
