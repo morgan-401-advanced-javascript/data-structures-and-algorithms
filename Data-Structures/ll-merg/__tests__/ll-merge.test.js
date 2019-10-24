@@ -233,3 +233,30 @@ describe('Where k is not at the end, but somewhere in the middle of the linked l
     expect(k).toBe('blue');
   });
 });
+
+// Where list1 is the same length as list2
+describe('Where list1 is the same length as list2', ()=>{
+  let list1 = new LinkedList();
+  let list2 = new LinkedList();
+  list1.insert(1);
+  list1.append(2);
+  list1.append(3);
+  list2.insert('a');
+  list2.append('b');
+  list2.append('c');
+
+  let merged = mergeLists(list1, list2);
+
+  it('should return an alternating list', ()=>{
+    expect(merged).toBe(1, 'a', 2, 'b', 3, 'c');
+  });
+
+
+
+
+});
+
+// Where list1 is shorter than list2
+// Where list1 is longer than list2
+// Where list1 is null
+// Where both lists are of length 1
