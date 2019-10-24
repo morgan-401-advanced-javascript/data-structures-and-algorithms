@@ -100,29 +100,34 @@ class LinkedList {
     }
   }
   mergeLists(list1, list2){
-    let array1 = list1.toString().split(', ');
-    let array2= list2.toString().split(', ');
+    if(list1 === null || list2 === null){
+      return 'Not valid Linked List';
+
+    }
+    let array1 = list1.toString().split(',');
+    
+    let array2 = list2.toString().split(',');
     let final = new LinkedList;
     if (array1.length - array2.length > 1 || array2.length - array1.length > 1){
       return 'Linked Lists are not close enough in length';
     }
-    if( array1 === null || array2 === null){
-      return 'Not valid Linked List';
-    }
+
     if (array1.length >= array2.length) {
       let answer = [];
       for(let i = 0; i < array1.length; i++) {
         answer.push([array1[i], array2[i]]);
+        answer = [].concat.apply([], answer);
       }
       answer.forEach(item=>{
         final.append(item);
       });
       return final;
     }
-    if (array1.length <= array2.length){
+    if (array1.length < array2.length){
       let answer = [];
-      for(let i = 0; i < array2.length; i++){
+      for(let i = 0; i < array2.length+1; i++){
         answer.push([array2[i], array1[i]]);
+        answer = [].concat.apply([], answer);
       }
       answer.forEach(item=>{
         final.append(item);

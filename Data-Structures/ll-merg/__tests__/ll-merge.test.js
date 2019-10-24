@@ -238,25 +238,76 @@ describe('Where k is not at the end, but somewhere in the middle of the linked l
 describe('Where list1 is the same length as list2', ()=>{
   let list1 = new LinkedList();
   let list2 = new LinkedList();
-  list1.insert(1);
-  list1.append(2);
-  list1.append(3);
+  list1.insert('1');
+  list1.append('2');
   list2.insert('a');
   list2.append('b');
-  list2.append('c');
-
-  let merged = mergeLists(list1, list2);
-
+  let merged = new LinkedList();
+  merged = merged.mergeLists(list1, list2);
+  
   it('should return an alternating list', ()=>{
-    expect(merged).toBe(1, 'a', 2, 'b', 3, 'c');
+    expect(merged.head.data).toBe('1');
+    expect(merged.head.next.data).toBe('a');
+    expect(merged.head.next.next.data).toBe('2');
+    expect(merged.head.next.next.next.data).toBe('b');
   });
-
-
-
-
 });
-
 // Where list1 is shorter than list2
+describe('Where list1 is shorter than list2', ()=>{
+  let list1 = new LinkedList();
+  let list2 = new LinkedList();
+  list1.insert('1');
+  list2.insert('a');
+  list2.append('b');
+  let merged = new LinkedList();
+  merged = merged.mergeLists(list1, list2);
+  
+  it('should return an alternating list', ()=>{
+    expect(merged.head.data).toBe('a');
+    expect(merged.head.next.data).toBe('1');
+    expect(merged.head.next.next.data).toBe('b');
+  });
+});
 // Where list1 is longer than list2
+describe('Where list1 is longer than list2', ()=>{
+  let list1 = new LinkedList();
+  let list2 = new LinkedList();
+  list1.insert('1');
+  list1.append('2');
+  list2.insert('a');
+  let merged = new LinkedList();
+  merged = merged.mergeLists(list1, list2);
+  
+  it('should return an alternating list', ()=>{
+    expect(merged.head.data).toBe('1');
+    expect(merged.head.next.data).toBe('a');
+    expect(merged.head.next.next.data).toBe('2');
+  });
+});
 // Where list1 is null
+describe('Where list1 is null', ()=>{
+  let list1 = null;
+  let list2 = new LinkedList();
+  list2.insert('a');
+  list2.insert('b');
+  let merged = new LinkedList();
+  merged = merged.mergeLists(list1, list2);
+  
+  it('should return an alternating list', ()=>{
+    expect(merged).toBe('Not valid Linked List');
+  });
+});
 // Where both lists are of length 1
+describe('Where both lists are of length 1', ()=>{
+  let list1 = new LinkedList();
+  let list2 = new LinkedList();
+  list1.insert('1');
+  list2.insert('a');
+  let merged = new LinkedList();
+  merged = merged.mergeLists(list1, list2);
+  
+  it('should return an alternating list', ()=>{
+    expect(merged.head.data).toBe('1');
+    expect(merged.head.next.data).toBe('a');
+  });
+});
