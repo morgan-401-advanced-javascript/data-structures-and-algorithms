@@ -1,4 +1,4 @@
-const LinkedList = require('../ll-merge.js');
+const LinkedList = require('../ll-merge.js.js');
 
 describe('Test', () => {
   it('true', ()=>{

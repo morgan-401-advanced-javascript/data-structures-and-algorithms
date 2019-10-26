@@ -1,4 +1,4 @@
-const Node = require('./node.js');
+const Node = require('./node.js.js');
 
 // instantiate an empty linked list
 class LinkedList {
@@ -102,16 +102,13 @@ class LinkedList {
   mergeLists(list1, list2){
     if(list1 === null || list2 === null){
       return 'Not valid Linked List';
-
     }
-    let array1 = list1.toString().split(',');
-    
+    let array1 = list1.toString().split(','); 
     let array2 = list2.toString().split(',');
     let final = new LinkedList;
     if (array1.length - array2.length > 1 || array2.length - array1.length > 1){
       return 'Linked Lists are not close enough in length';
     }
-
     if (array1.length >= array2.length) {
       let answer = [];
       for(let i = 0; i < array1.length; i++) {
@@ -135,8 +132,6 @@ class LinkedList {
       return final;
     }
     return null;
-
-
   }
 
 
