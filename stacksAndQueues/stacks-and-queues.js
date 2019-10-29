@@ -60,10 +60,10 @@ class Queue {
   dequeue(){
     if(this.front !== null){
       this.temp = this.front;
-      this.temp.next = this.front;
+      this.front = this.temp.next;
       return this.temp.data;
     }else{
-      return 'empty queue';
+      return 'null';
     }
   }
   peek(){

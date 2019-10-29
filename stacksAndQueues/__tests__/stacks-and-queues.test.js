@@ -120,8 +120,6 @@ describe('Can successfully empty a queue after multiple dequeues', ()=>{
   let queue = new StackAndQueues.Queue();
   queue.enqueue('a');
   queue.enqueue('b');
-  queue.enqueue('c');
-  queue.dequeue();
   queue.dequeue();
   queue.dequeue();
   
@@ -130,3 +128,10 @@ describe('Can successfully empty a queue after multiple dequeues', ()=>{
   });
 });
 // Can successfully instantiate an empty queue
+describe('Can successfully instantiate an empty queue', ()=>{
+  let queue = new StackAndQueues.Queue();
+  
+  it('ITS ALIVE!', ()=>{
+    expect(queue.front).toBe(null);
+  });
+});
