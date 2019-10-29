@@ -1,15 +1,42 @@
 # Stacks and Queues
 
-<!-- Short summary or background information -->
+Implement a Stack and a Queue Data Structure
 
 ## Challenge
 
-<!-- Description of the challenge -->
+* Can successfully push onto a stack
+* Can successfully push multiple values onto a stack
+* Can successfully pop off the stack
+* Can successfully empty a stack after multiple pops
+* Can successfully peek the next item on the stack
+* Can successfully instantiate an empty stack
+* Can successfully enqueue into a queue
+* Can successfully enqueue multiple values into a queue
+* Can successfully dequeue out of a queue the expected value
+* Can successfully peek into a queue, seeing the expected value
+* Can successfully empty a queue after multiple dequeues
+* Can successfully instantiate an empty queue
 
 ## Approach & Efficiency
 
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+This should be a Big O of O(1) because we never have to traverse through the entire list. 
 
 ## API
+`class Stack {
+  constructor(){
+    this.top = null;
+  }
+  push(value)
+  pop()
+  peek()
+}`
 
-<!-- Description of each method publicly available to your Stack and Queue-->
+`class Queue {
+  constructor(){
+    this.front = null;
+    this.rear = null;
+  }
+  enqueue(value)
+  dequeue()
+  peek()
+}`
