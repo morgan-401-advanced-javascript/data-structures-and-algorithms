@@ -18,9 +18,15 @@ Implement a Stack and a Queue Data Structure
 * Can successfully instantiate an empty queue
 
 ## Approach & Efficiency
+Stack:
+* push O(1) we only manipulate the first item in the stack
+* pop O(1) we only manipulate the first item in the stack
+* peek O(1) we only manipulate the first item in the stack
 
-This should be a Big O of O(1) because we never have to traverse through the entire list. 
-
+Queue:
+* enqueue O(1) we only manipulate one item in the stack
+* dequeue O(1) we only manipulate one item in the stack
+* peek O(1) we only manipulate one item in the stack
 ## API
 `class Stack {
   constructor(){

@@ -73,8 +73,6 @@ class Queue {
       return 'empty queue';
     }
   }
-
-
 }
 
 module.exports = { Stack, Queue};
