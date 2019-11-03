@@ -1,6 +1,13 @@
 const StackAndQueues = require('../stacks-and-queues.js');
 
 describe('Test', () => {
+  console.log('\x1b[36m\x1b[34m%s\x1b[0m', `
+  ______                          _
+  |  _  \\                        | |
+  | | | |  ___  _ __ ___    ___  | |
+  | | | | / _ \\| '_ \` _ \\  / _ \\ | |
+  | |/ / |  __/| | | | | || (_) ||_|
+  |___/   \\___||_| |_| |_| \\___/ (_)`);
   it('true', ()=>{
     expect(true).toBeTruthy();
   });
