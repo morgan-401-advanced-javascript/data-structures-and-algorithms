@@ -3,25 +3,21 @@ const Stack = require('./stacks.js');
 
 
 
-class PsuedoQueue extends Stack {
-  // let stackTwo = new Stack();
+class PsuedoQueue{
+  constructor(){
+    this.stackOne = new Stack();
+    this.stackTwo = new Stack();
+  }
   enqueue(value){
-    this.push(value);
+    this.stackOne.push(value);
   }
   dequeue(){
-    let first = this;
-    let second = new PsuedoQueue;
-    let firstArray = [];
 
-    let currentnode = first.top;
-    while(currentnode.next){
-      firstArray.push(currentnode);
-      currentnode = currentnode.next;
+    while(this.stackOne.top !== null){
+      let current  = this.stackOne.pop();
+      this.stackTwo.push(current);
     }
-    for (let i=0; i <= firstArray.length; i++){
-        second.enqueue(first.pop());
-    }
-    second.pop();
+    return this.stackTwo.pop();
   }
 }
 
