@@ -18,7 +18,7 @@ The Stack instances have only push, pop, and peek methods. You should use your o
 ## Approach & Efficiency
 
   enqueue(value) - O(1)
-  dequeue() - O(n)
+  dequeue() - O(2n) which reduces to O(n)
 
 
 ## API
