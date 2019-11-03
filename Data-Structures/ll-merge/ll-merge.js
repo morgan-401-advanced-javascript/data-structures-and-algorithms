@@ -1,4 +1,4 @@
-const Node = require('./node.js.js');
+const Node = require('./node.js');
 
 // instantiate an empty linked list
 class LinkedList {
