@@ -1,9 +1,6 @@
 # Merging two Singly Linked Lists
 
-* Write a method called mergeLists which takes two linked lists as arguments
-* Merge the two lists together such that the final linked list has nodes that alternate between the nodes from each source list
-* Return the head of the new merged list
-* You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+Merge two linked lists into one.
 
 ## Challenge
 
