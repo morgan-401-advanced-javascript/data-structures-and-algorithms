@@ -14,9 +14,11 @@ Write tests to prove the following functionality:
 * Can properly return a collection of all the values that exist in the linked list
 
 ## Approach & Efficiency
-O(n)
-The worst case scenario would occur while cycling through each item of the list.
+insert(data) O(1)
 
+includes(searchValue) O(n)
+
+toString() O(n)
 ## API
 
 insert(data) - Creates a new Node Object. Appends the new Node object to the beginning of the linked list
