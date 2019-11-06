@@ -1,4 +1,12 @@
 # data-structures-and-algorithms
 ## Table of Contents
-
-[Array-Reverse](./challenges/arrayReverse)
+#### Challenge 1
+[1. Array-Reverse](./challenges/arrayReverse)
+#### Challenge 2
+[2. Array-Shift](./challenges/ArrayShift)
+#### Challenge 3
+[Array-Binary-Search](./challenges/arrayBinarySearch)
+#### Challenge 5
+[Link-List](./challenges/LinkList)
+#### Challenge 6
+[ll-Insertions](./challenges/ll-Insertions)
