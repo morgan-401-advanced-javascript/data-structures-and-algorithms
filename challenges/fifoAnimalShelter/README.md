@@ -3,7 +3,7 @@
 ## Links
 
 -   [PR](https://github.com/morgan-401-advanced-javascript/data-structures-and-algorithms/pull/10)
--   [Link to Travis](https://travis-ci.com/morgan-401-advanced-javascript/data-structures-and-algorithms/builds/135559722)
+-   [Link to Travis](https://travis-ci.com/morgan-401-advanced-javascript/data-structures-and-algorithms/builds/135561004)
 
 Build a a Queue that represents an animal shelter. Creat Dog and Cat classes. 
 
