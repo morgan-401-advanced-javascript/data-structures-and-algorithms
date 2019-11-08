@@ -67,11 +67,6 @@ class AnimalShelter {
     }
     return 'we do not have that animal';
   }
-  
-    
-
-
-
 }
 
 
