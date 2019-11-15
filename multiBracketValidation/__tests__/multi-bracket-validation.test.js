@@ -6,8 +6,8 @@ describe('multi-bracket-validation', () => {
   it('{}	TRUE', ()=>{
 
     expect(Multi('{}')).toBe(true);
-});
-// {}(){}	TRUE
+  });
+  // {}(){}	TRUE
   it('{}(){}	TRUE', ()=>{
 
     expect(Multi('{}(){}')).toBe(true);
