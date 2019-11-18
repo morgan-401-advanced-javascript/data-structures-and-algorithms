@@ -17,12 +17,13 @@ The Stack instances have only push, pop, and peek methods. You should use your o
 
 ## Approach & Efficiency
 
-  enqueue(value) - O(1)
-  dequeue() - O(2n) which reduces to O(n)
+  enqueue(value) - O(1) This function simply adds a single value to the queue. Because it only does one action and no more it is Big O(1)
+  dequeue() - O(n) This will have to shift the items in the queue between two stacks inorder to pop the first item off the queue. Because it will need to traverse through the entire queue it is Big O(n)
 
 
 ## API
 class PsuedoQueue{
-  enqueue(value)
-  dequeue()
+  
+  `enqueue(value) `which inserts value into the PseudoQueue, using a last-in, last-out approach.
+  `dequeue()` which extracts a value from the PseudoQueue, using a first-in, first-out approach.
 }
