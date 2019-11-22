@@ -1,6 +1,8 @@
 'use strict';
 
 const BinarySearchTree = require('../binary-search.js');
+const BinaryTree = require('../tree.js');
+
 
 let tree = new BinarySearchTree;
 
@@ -21,6 +23,14 @@ describe('Binary Search Tree', () => {
     expect(tree.root.data).toBe(5);
     expect(tree.root.left.data).toBe(2);
     expect(tree.root.right.data).toBe(7);
+  }); 
+
+  it('Can successfully return a collection from a pre-order traversal', () => { 
+    tree.add(5);
+    tree.add(7);
+    tree.add(2);
+    expect(tree.preOrder()).toBe(5);
+
   }); 
 });
 
