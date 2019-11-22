@@ -14,6 +14,7 @@ class BinaryTree {
   }
 }
 
+module.exports = BinaryTree;
 
 
 // An inOrder method that traverses the tree using the pattern left >> root >> right and returns an array of the traversed values
