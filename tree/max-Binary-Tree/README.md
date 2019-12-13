@@ -1,6 +1,6 @@
 ## Links
 
--   [Link to PR](https://github.com/morgan-401-advanced-javascript/)data-structures-and-algorithms/pull/14
+-   [Link to PR](https://github.com/morgan-401-advanced-javascript/data-structures-and-algorithms/pull/14)
 -   [Link to Travis](https://travis-ci.com/morgan-401-advanced-javascript/data-structures-and-algorithms)
 
 <!-- Short summary or background information -->
