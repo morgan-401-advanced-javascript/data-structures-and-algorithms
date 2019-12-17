@@ -2,7 +2,7 @@
 const BinaryTree = require('../tree.js');
 
 
-describe('Binary Search Tree', () => {
+xdescribe('Binary Search Tree', () => {
   it('Can successfully instantiate an empty tree', () => { 
     let tree = new BinaryTree;
     expect(tree).toBeTruthy();
@@ -24,7 +24,7 @@ describe('Binary Search Tree', () => {
     expect(tree.root.right.data).toBe(7);
   }); 
 });
-describe('Search Tree', () => {
+xdescribe('Search Tree', () => {
   let tree = new BinaryTree;
   tree.add(2);
   tree.add(1);
