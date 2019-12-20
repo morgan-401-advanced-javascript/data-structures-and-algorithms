@@ -1,7 +1,7 @@
 ## Links
 
--   Link to Pull Request
--   Link to Travis
+-   [Link to Pull Request](https://github.com/morgan-401-advanced-javascript/data-structures-and-algorithms/pull/16)
+-   [Link to Travis](https://travis-ci.com/morgan-401-advanced-javascript/data-structures-and-algorithms)
 
 <!-- Short summary or background information -->
 
