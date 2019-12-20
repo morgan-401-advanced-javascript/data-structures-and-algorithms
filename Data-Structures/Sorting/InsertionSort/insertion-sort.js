@@ -1,7 +1,7 @@
 'use strict';
 
 function insertionSort(array) {
-  let answer =[];
+  let answer =[...array];
   if(Array.isArray(array) != true){
     return('Not an array');
   }
@@ -12,14 +12,18 @@ function insertionSort(array) {
     return('Array with non-numerical values');
   }
   else{
-    answer.push(array[0]);
-    for (let i = 0; i < array.length; i++) {
-      let item = array[i];
-      let j;
-      for (j = i - 1; array[j] > item; j--) {
-        answer[j + 1] = array[j];
+    let i = 0;
+    while(i <= answer.length){
+      let j =1;
+      while(j > 0){
+        if(answer[j-1] > answer[j]){
+          let temp = answer[j];
+          answer[j] = answer[j-1];
+          answer[j-1] = temp;
+        }
+        j = j-1;
       }
-      answer[j + 1] = item;
+      i++;
     }
     return answer;
   }

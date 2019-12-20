@@ -22,7 +22,7 @@ describe('Insertion Sort Tests', () => {
     expect(sortedArray).toEqual([5, 13]);
   });
   // Sort array of length 10
-  xit('Sort array of length 10', ()=>{
+  it('Sort array of length 10', ()=>{
     let array = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
     let sortedArray = InsertionSort(array);
     expect(sortedArray).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
