@@ -18,5 +18,17 @@
 [Stack-And-Queue](./stacksAndQueues/)
 #### Challenge 12
 [fifo-animal-shelter](./challenges/fifoAnimalShelter)
-#### Challenge 13
+#### Challenge 14
+[]
+#### Challenge 15
+[]
+#### Challenge 16
+[]
+#### Challenge 17
+[]
+#### Challenge 18
+[]
+#### Challenge 19- Insertion Sort
+[Insertion-Sort](./Data-Structures/Sorting)
+#### Challenge 20
 []
