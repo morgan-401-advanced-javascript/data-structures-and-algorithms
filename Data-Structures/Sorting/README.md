@@ -1,0 +1,23 @@
+# Insertion Sort
+
+## Links
+
+-   [Link to Pull Request](https://github.com/morgan-401-advanced-javascript/data-structures-and-algorithms/pull/15)
+-   [Link to Travis](https://travis-ci.com/morgan-401-advanced-javascript/data-structures-and-algorithms)
+
+
+## Challenge
+
+Write a function called `insertionSort`, which takes an array of numbers and returns a sorted array after using the Insertion Sort algorithm. Do not mutate (change) the array given to you as a parameter.
+
+## Approach & Efficiency
+
+O(n^2) In the worst case scenario
+
+## API
+
+`InsertionSort(array)` function that takes in an array as a parameter
+
+## Whiteboard / Drawing
+
+![UML](../../assets/insertionsort.jpg)
