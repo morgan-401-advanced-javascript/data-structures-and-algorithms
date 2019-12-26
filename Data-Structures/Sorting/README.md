@@ -5,9 +5,6 @@
 -   [Link to Pull Request](https://github.com/morgan-401-advanced-javascript/data-structures-and-algorithms/pull/15)
 -   [Link to Travis](https://travis-ci.com/morgan-401-advanced-javascript/data-structures-and-algorithms)
 
-## Whiteboard / Drawing
-
-<!-- Photo of your whiteboard or drawing -->
 
 ## Challenge
 
@@ -20,3 +17,7 @@ O(n^2) In the worst case scenario
 ## API
 
 `InsertionSort(array)` function that takes in an array as a parameter
+
+## Whiteboard / Drawing
+
+![UML](../../assets/insertionsort.jpg)
