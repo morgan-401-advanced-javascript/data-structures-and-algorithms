@@ -1,29 +1,36 @@
 'use strict';
 
 function insertionSort(array) {
-  let answer =[];
   if(Array.isArray(array) != true){
     return('Not an array');
   }
   if(array.length === 0){
     return('Empty array');
   }
-  if(typeof array[0] != 'number'){
+  let badArrayData = [];
+  array.forEach(element => {
+    if(typeof element != 'number'){
+      badArrayData.push(element);
+    }
+  });
+  if(badArrayData.length > 0){
     return('Array with non-numerical values');
   }
-  else{
-    answer.push(array[0]);
-    for (let i = 0; i < array.length; i++) {
-      let item = array[i];
-      let j;
-      for (j = i - 1; array[j] > item; j--) {
-        answer[j + 1] = array[j];
+  let answer =[...array];
+  let i = 1;
+  while(i < answer.length){
+    let j = i;
+    while(j>0){
+      if(answer[j-1]> answer[j]){
+        let temp = answer[j];
+        answer[j] = answer[j-1];
+        answer[j-1] = temp;
       }
-      answer[j + 1] = item;
+      j--; 
     }
-    return answer;
+    i++;
   }
-
+  return answer;
 }
 
 module.exports = insertionSort;

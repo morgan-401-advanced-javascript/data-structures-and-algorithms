@@ -15,7 +15,7 @@ Write a function called `insertionSort`, which takes an array of numbers and ret
 
 ## Approach & Efficiency
 
-O(n) since we do not mutate the array in place and create a duplicate array that we manipulate
+O(n^2) In the worst case scenario
 
 ## API
 
