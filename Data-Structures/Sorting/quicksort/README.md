@@ -2,10 +2,9 @@
 
 ## Links
 
--   Link to Pull Request
--   Link to Travis
+-   [Link to Pull Request](https://github.com/morgan-401-advanced-javascript/data-structures-and-algorithms/pull/17)
+-   [Link to Travis](https://travis-ci.com/morgan-401-advanced-javascript/data-structures-and-algorithms/builds/143058429)
 
-<!-- Short summary or background information -->
 
 ## Whiteboard / Drawing
 
@@ -13,7 +12,7 @@
 
 ## Challenge
 
-<!-- Description of the challenge -->
+Write a function called quicksort, which takes an array of numbers and returns a sorted array after using the Quicksort algorithm. Do not mutate (change) the array given to you as a parameter.
 
 ## Approach & Efficiency
 
@@ -21,4 +20,4 @@
 
 ## API
 
-<!-- Description of each method publicly available in your implementati
+`quicksort`
