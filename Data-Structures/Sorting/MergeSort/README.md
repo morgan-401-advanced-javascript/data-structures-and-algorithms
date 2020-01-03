@@ -3,7 +3,6 @@
 -   [Link to Pull Request](https://github.com/morgan-401-advanced-javascript/data-structures-and-algorithms/pull/16)
 -   [Link to Travis](https://travis-ci.com/morgan-401-advanced-javascript/data-structures-and-algorithms)
 
-<!-- Short summary or background information -->
 
 ## Whiteboard / Drawing
 
@@ -11,12 +10,15 @@
 
 ## Challenge
 
-<!-- Description of the challenge -->
+Write a function called mergeSort, which takes an array of numbers and returns a sorted array after using the Merge Sort algorithm. Do not mutate (change) the array given to you as a parameter.
 
 ## Approach & Efficiency
 
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+ Best case scenario is Big O(nlog(n)) 
+ space is Big O(n)
 
 ## API
 
-<!-- Description of each method publicly av
+`mergeSort(arr)` takes in an unsorted array and will return a sorted array
+`sort(temp, sIndx, eIndx)`
+`merge(arr, sIndx, mid, eIndx)`

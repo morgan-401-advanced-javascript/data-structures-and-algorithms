@@ -8,7 +8,7 @@ describe('Test', () => {
 });
 
 // Sort array of length 1
-describe('Insertion Sort Tests', () => {
+xdescribe('Insertion Sort Tests', () => {
   it('Sort array of length 1', ()=>{
     let array = [ 13 ];
     let sortedArray = InsertionSort(array);

@@ -46,7 +46,6 @@ describe('Fifo Animal Shelter Tests!', () => {
     home.enqueue(cat2);
     home.enqueue(dog);
     home.dequeue('Dog');
-    console.log(home);
     expect(home.dequeue('Cat')).toBe('Luna is a sweet cat!');
   });
 
