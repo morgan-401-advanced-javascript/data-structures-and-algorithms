@@ -1,5 +1,6 @@
 'use strict';
 function quicksort(arr, sIndx, eIndx) {
+  let pivot;
   if(Array.isArray(arr) === false) {
     return 'Not an array';
   }
@@ -12,40 +13,40 @@ function quicksort(arr, sIndx, eIndx) {
   if(arr.length === 1) {
     return arr;
   }
-  if(sIndx < eIndx){
-    let pivot = partition(arr, sIndx, eIndx);
-    if (sIndx < pivot -1){
-      quicksort(arr, sIndx, pivot-1);
+  if(arr.length > 1){
+    pivot = partition(arr, sIndx, eIndx);
+    if (sIndx < pivot - 1){
+      quicksort(arr, sIndx, pivot - 1);
     }
     if(pivot < eIndx){
       quicksort(arr, pivot + 1, eIndx);
     }
   }
-  function swap(arr, sIndx, eIndx){
-    let temp = arr[sIndx];
-    arr[sIndx] = arr[eIndx];
-    arr[eIndx] = temp;
-  }
-  function partition(arr, sIndx, eIndx){
-    let pivot   = eIndx;
-    let i       = sIndx;
-    let j       = eIndx;
-    while (i <= j) {
-      while (arr[i] < pivot) {
-        i++;
-      }
-      while (arr[j] > pivot) {
-        j--;
-      }
-      if (i <= j) {
-        swap(arr, i, j);
-        i++;
-        j--;
-      }
-    }
-    return i;
-  }
   return arr;
+}
+function swap(arr, left, right){
+  let temp = arr[left];
+  arr[left] = arr[right];
+  arr[right] = temp;
+}
+function partition(arr, left, right){
+  let pivot   = arr[Math.floor((left + right) / 2)];
+  let i       = left;
+  let j       = right;
+  while (i <= j) {
+    while (arr[i] < pivot) {
+      i++;
+    }
+    while (arr[j] > pivot) {
+      j--;
+    }
+    if (i <= j) {
+      swap(arr, i, j);
+      i++;
+      j--;
+    }
+  }
+  return i;
 }
 
 

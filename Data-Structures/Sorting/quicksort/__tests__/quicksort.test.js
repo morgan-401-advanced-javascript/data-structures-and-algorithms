@@ -32,13 +32,13 @@ describe('Sorting tests', () => {
   // Sort array of length 2
   it('Sort array of length 2', ()=>{
     let testTwo = [4, 2];
-    let eIndx = testTwo.length -1;
-    expect(quicksort(testTwo, 0, eIndx)).toEqual([2, 4]);
+    let eIndxTwo = testTwo.length - 1;
+    expect(quicksort(testTwo, 0, eIndxTwo)).toEqual([2, 4]);
   });
   // Sort array of length 10
   it('Sort array of length 10', ()=>{
     let testTen = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
-    let eIndx = testTen.length -1;
-    expect(quicksort(testTen,  0, eIndx)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+    let eIndxTen = testTen.length - 1;
+    expect(quicksort(testTen, 0, eIndxTen)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
   });
 });

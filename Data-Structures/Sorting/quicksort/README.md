@@ -16,8 +16,8 @@ Write a function called quicksort, which takes an array of numbers and returns a
 
 ## Approach & Efficiency
 
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Optimally this sorting algorithm will have a Big O(nlog(n)) However in the worst case it would have a Big O(n^2)
 
 ## API
 
-`quicksort`
+`quicksort(arr, sIndx, eIndx) ` This will take in an array & sort it using the quick sort algorithm. 
