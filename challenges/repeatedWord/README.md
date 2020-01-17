@@ -2,7 +2,7 @@
 
 ## Links
 
--   Link to Pull Request
+-   [Link to Pull Request](https://github.com/morgan-401-advanced-javascript/data-structures-and-algorithms/pull/18)
 -   Link to Travis
 - [replt](https://repl.it/repls/PalatableKnobbyDisks)
 
