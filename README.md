@@ -34,3 +34,5 @@
 [merge-sort](./Data-Structures/Sorting/MergeSort)
 #### Challenge 21
 [merge-sort](./Data-Structures/Sorting/quicksort)
+#### Challenge 25
+[Repeated-Word](.challenges/repeatedWord)

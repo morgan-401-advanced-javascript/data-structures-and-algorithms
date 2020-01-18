@@ -3,10 +3,8 @@
 ## Links
 
 -   [Link to Pull Request](https://github.com/morgan-401-advanced-javascript/data-structures-and-algorithms/pull/18)
--   Link to Travis
+-   [Link to Travis](https://travis-ci.com/morgan-401-advanced-javascript/data-structures-and-algorithms/builds/145075856)
 - [replt](https://repl.it/repls/PalatableKnobbyDisks)
-
-<!-- Short summary or background information -->
 
 ## Whiteboard / Drawing
 
@@ -14,12 +12,13 @@
 
 ## Challenge
 
-<!-- Description of the challenge -->
+Write a function that accepts a lengthy string parameter.
+Without utilizing any of the built-in library methods available to your language, return the first word to occur more than once in that provided string.
 
 ## Approach & Efficiency
 
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Big O(n^2) due to the nested for loops. 
 
 ## API
 
-<!-- Description of each method publicly avai
+`repeatedWord` takes in a string as a parameter and returns the first repeated word
