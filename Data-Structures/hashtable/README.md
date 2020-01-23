@@ -1,6 +1,6 @@
 # Hashtables
 
-<!-- Short summary or background information -->
+[Link to PR](https://github.com/morgan-401-advanced-javascript/data-structures-and-algorithms/pull/19)
 
 ## Challenge
 
