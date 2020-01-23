@@ -19,13 +19,25 @@ class hashTable {
             
     return hash; 
   } 
-  add(key, value){
-    let hashed = this.hashString(key);
-    this.bucket[hashed] = [{'key': 'value'}];
+  add(keyItem, valueItem){
+    let hashed = this.hashString(keyItem);
+    if(this.bucket[hashed]){
+      return 'non unique key';
+    }
+    else{
+      this.bucket[hashed] = {[keyItem] : valueItem};
+
+    }
   }
-  get(key){
-    let hashed = this.hashString(key);
-    return this.bucket[hashed].value;
+  get(keyItem){
+    let hashed = this.hashString(keyItem);
+    let item = this.bucket[hashed];
+    if(item){
+      return Object.values(item)[0];
+    }
+    else{
+      return null;
+    }
   }
   contains(key){
     let hashed = this.hashString(key);
