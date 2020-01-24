@@ -4,9 +4,9 @@ const tree = require('./tree');
 
 
 function tree_intersection(tree1, tree2){
-    if(!tree1.root || !tree2.root){
-        return 'invalid';
-    }
+  if(!tree1.root || !tree2.root){
+    return 'invalid';
+  }
   // loop through tree 1
   let tree1Array = tree1.inOrder();
   let tree2Array = tree2.inOrder();

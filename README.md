@@ -36,3 +36,7 @@
 [merge-sort](./Data-Structures/Sorting/quicksort)
 #### Challenge 25
 [Repeated-Word](.challenges/repeatedWord)
+#### Challenge 26
+
+#### Challenge 27
+[treeIntersection](.challenges/treeIntersection)
