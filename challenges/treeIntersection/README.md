@@ -8,7 +8,7 @@
 
 ## Whiteboard / Drawing
 
-<!-- Photo of your whiteboard or drawing -->
+![uml](./assets/uml.jpg)
 
 ## Challenge
 
