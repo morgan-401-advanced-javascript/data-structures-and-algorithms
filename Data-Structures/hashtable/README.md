@@ -1,6 +1,7 @@
 # Hashtables
 
 [Link to PR](https://github.com/morgan-401-advanced-javascript/data-structures-and-algorithms/pull/19)
+[Travis](https://travis-ci.com/morgan-401-advanced-javascript/data-structures-and-algorithms/builds/146334549)
 
 ## Challenge
 
