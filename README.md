@@ -36,3 +36,5 @@
 [merge-sort](./Data-Structures/Sorting/quicksort)
 #### Challenge 25
 [Repeated-Word](.challenges/repeatedWord)
+#### Challenge 26
+[hashtable](./Data-Structures/hashtable)

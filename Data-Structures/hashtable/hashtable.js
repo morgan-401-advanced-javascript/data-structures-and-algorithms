@@ -14,29 +14,40 @@ class hashTable {
     for (let i = 0; i < string.length; i++) { 
       let char = string.charCodeAt(i); 
       hash = ((hash << 5) - hash) + char; 
-      hash = hash & hash; 
     } 
             
-    return hash; 
+    return hash % 4; 
   } 
   add(keyItem, valueItem){
     let hashed = this.hashString(keyItem);
-    if(this.bucket[hashed]){
-      return 'non unique key';
+    if(this.bucket[hashed] === undefined){
+      this.bucket[hashed] = [[keyItem, valueItem]];
     }
     else{
-      this.bucket[hashed] = {[keyItem] : valueItem};
-
+      let existing = false;
+      for(var i = 0; i < this.bucket[hashed].length; i++){
+        if(this.bucket[hashed][i][0]=== keyItem){
+          this.bucket[hashed][i][1] = valueItem;
+          existing = true;
+        }
+        if(existing === false){
+          this.bucket[hashed].push([keyItem, valueItem]);
+        }
+      }
     }
   }
   get(keyItem){
     let hashed = this.hashString(keyItem);
     let item = this.bucket[hashed];
-    if(item){
-      return Object.values(item)[0];
+    if(item === undefined){
+      return null;
     }
     else{
-      return null;
+      for(var i = 0; i < item.length; i++){
+        if(item[i][0]=== keyItem){
+          return item[i][1];
+        }
+      }
     }
   }
   contains(key){
